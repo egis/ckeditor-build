@@ -13,7 +13,7 @@ The custom editor build for CKEditor&nbsp;5. Read more about the [how to create 
 ### change configuration in
 `src/ckeditor.js`
 
-### commit, push, create pull request
+### run `yarn build`, commit, push, create pull request
 
 ## License
 
