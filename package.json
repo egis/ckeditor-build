@@ -1,0 +1,30 @@
+{
+  "name": "ckeditor-build",
+  "version": "1.0.0",
+  "description": "The custom editor build of CKEditor 5",
+  "main": "./build/ckeditor.js",
+  "types": "./build/ckeditor.d.ts",
+  "files": [
+    "build",
+    "ckeditor5-metadata.json",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "webpack --mode production",
+    "postbuild": "tsc -p ./tsconfig.types.json"
+  },
+  "devDependencies": {
+    "@ckeditor/ckeditor5-dev-utils": "^42.0.0",
+    "ckeditor5": "42.0.0",
+    "terser-webpack-plugin": "^4.2.3",
+    "typescript": "5.0.4",
+    "webpack": "^5.58.1",
+    "webpack-cli": "^4.9.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "release": {
+    "analyzeCommits": "simple-commit-message"
+  }
+}
