@@ -16,6 +16,8 @@
   "devDependencies": {
     "@ckeditor/ckeditor5-dev-utils": "^42.0.0",
     "ckeditor5": "42.0.0",
+    "semantic-release": "17.0.0",
+    "simple-commit-message": "^4.0.3",
     "terser-webpack-plugin": "^4.2.3",
     "typescript": "5.0.4",
     "webpack": "^5.58.1",

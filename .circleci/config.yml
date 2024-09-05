@@ -6,6 +6,12 @@ jobs:
     steps:
       - attach_workspace:
           at: /home/circleci
+      - checkout
+      - run:
+          name: setup
+          command: |
+            cd ~/project
+            yarn --frozen-lockfile
       - run:
           name: deploy
           command: |
