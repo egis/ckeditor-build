@@ -16,16 +16,16 @@ module.exports = {
 	devtool: 'source-map',
 	performance: { hints: false },
 
-	entry: path.resolve( __dirname, 'src', 'ckeditor.ts' ),
+	entry: path.resolve( __dirname, 'src', 'entry.ts' ),
 
 	output: {
 		// The name under which the editor will be exported.
-		library: 'ClassicEditor',
+		library: 'EgisCKEditor',
 
 		path: path.resolve( __dirname, 'build' ),
 		filename: 'ckeditor.js',
 		libraryTarget: 'umd',
-		libraryExport: 'default'
+		umdNamedDefine: true
 	},
 
 	optimization: {

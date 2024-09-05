@@ -1,0 +1,19 @@
+version: 2
+jobs:
+  deploy:
+    docker:
+      - image: cimg/node:18.19.1
+    steps:
+      - attach_workspace:
+          at: /home/circleci
+      - run:
+          name: deploy
+          command: |
+            (yarn semantic-release) || echo "publishing failed"
+
+workflows:
+  version: 2
+  main:
+    jobs:
+      - deploy:
+          context: org-global
