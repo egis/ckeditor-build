@@ -6,6 +6,7 @@ jobs:
     steps:
       - attach_workspace:
           at: /home/circleci
+      - checkout
       - run:
           name: deploy
           command: |
